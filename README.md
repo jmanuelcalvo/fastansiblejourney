@@ -55,7 +55,8 @@ Desplegar la maquina completa y realizar la instalacion del Ansible Automation P
 <details open>
 <summary>Reto 1</summary>
 <br>
-Parchado (actualización de versiones menores)
+<h3>Parchado (actualización de versiones menores)</h3>
+
 
 El objetivo de este reto, es que a partir de <b>Ansible Automation Platform</b> se realize la actualizacion de una maquina virtual con Red Hat Enterprise Linux
 
