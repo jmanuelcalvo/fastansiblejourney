@@ -1,4 +1,6 @@
 # Fast Ansible Journey
+![Arquitectura](images/arquitectura_aap.png)
+
 
 ## Alistamiento de la arquitectura
 
