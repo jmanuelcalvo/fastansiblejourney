@@ -12,7 +12,6 @@ La imagen lista con el AAP instalado y contenerizado se puede descargar en el si
 <pre>
 <a href="https://www.dropbox.com/scl/fo/369gn1gj3onyfofbxie89/AMX9KU0Zpnv5ndZxhdL08K0?rlkey=o0hka6wp1wfhcsurjgb6cteux&st=olsw8sbd&dl=0" target="_blank">Imagen</a>
 
-  <p>Open link in a new window or tab: <a href="https://www.w3schools.com" target="_blank">Visit W3Schools!</a></p>
 </pre>
 
 
@@ -44,10 +43,7 @@ Desplegar la maquina completa y realizar la instalacion del Ansible Automation P
 <li>Crear <b>Proyecto</b> y enlazaro con su repositorio de GIT <a href="https://XXXX">Ver Instrucciones</a></li>
 <li>Crear <b>Credenciales</b> de maquina dentro de Ansible Automation Platform <a href="https://XXXX">Ver Instrucciones</a></li>
 <br><br>
-<pre>
-<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones</a>
-  
-</pre>
+
 </details>
 
 
@@ -56,6 +52,17 @@ Desplegar la maquina completa y realizar la instalacion del Ansible Automation P
 
 <details open>
 <summary>Reto 1</summary>
+<br>
+Parchado (actualización de versiones menores)
+
+El objetivo de este reto, es que a partir de <b>Ansible Automation Platform</b> se realize la actualizacion de una maquina virtual con Red Hat Enterprise Linux
+
+
+  <br><br>
+</details>
+
+<details open>
+<summary>Reto 2</summary>
 <br>
 Parchado (actualización de versiones menores)
 
@@ -68,4 +75,18 @@ El objetivo de este reto, es que a partir d
 </pre>
 </details>
 
+
+<details open>
+<summary>Reto 3</summary>
+<br>
+Parchado (actualización de versiones menores)
+
+El objetivo de este reto, es que a partir d
+
+  <br><br>
+<pre>
+<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones</a>
+  
+</pre>
+</details>
 
