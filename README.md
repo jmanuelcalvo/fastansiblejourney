@@ -11,6 +11,8 @@ La imagen lista con el AAP instalado y contenerizado se puede descargar en el si
 <br><br>
 <pre>
 <a href="https://www.dropbox.com/scl/fo/369gn1gj3onyfofbxie89/AMX9KU0Zpnv5ndZxhdL08K0?rlkey=o0hka6wp1wfhcsurjgb6cteux&st=olsw8sbd&dl=0" target="_blank">Imagen</a>
+
+  <p>Open link in a new window or tab: <a href="https://www.w3schools.com" target="_blank">Visit W3Schools!</a></p>
 </pre>
 
 
