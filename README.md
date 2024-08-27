@@ -12,8 +12,7 @@ Descargar maquina virtual en formato qcow2 y convertirla para su virtualizador p
 La imagen lista con el AAP instalado y contenerizado se puede descargar en el siguiente link:
 <br><br>
 <pre>
-<a href="https://www.dropbox.com/scl/fo/369gn1gj3onyfofbxie89/AMX9KU0Zpnv5ndZxhdL08K0?rlkey=o0hka6wp1wfhcsurjgb6cteux&st=olsw8sbd&dl=0" target="_blank">Imagen</a>
-
+<a href="https://www.dropbox.com/scl/fo/369gn1gj3onyfofbxie89/AMX9KU0Zpnv5ndZxhdL08K0?rlkey=o0hka6wp1wfhcsurjgb6cteux&st=olsw8sbd&dl=0" target="_blank">Imagen QCOW2 de AAP</a>
 </pre>
 
 Los datos de conexion a la maquina son:
@@ -23,6 +22,9 @@ root/ABCde123.
 aap/ABCde123.
 ```  
 
+Tenga en cuenta el formato de imagen qcow2 funciona sobre KVM, si usted utiliza otro virtualizador debe convertirla al formato de su virtualizador.
+
+Ejemplo: Busque en google como convertir qcow2 a vmdk.
 
 </details>
 
@@ -32,8 +34,7 @@ aap/ABCde123.
 Desplegar la maquina completa y realizar la instalacion del Ansible Automation Platform desde cero, para ellos se puede seguir esta guia de implementacion de la solucion contenerizada todo en uno:
 <br><br>
 <pre>
-<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones</a>
-  
+<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones Ansible Platfom Contenerized</a>
 </pre>
 </details>
 
@@ -42,9 +43,9 @@ Desplegar la maquina completa y realizar la instalacion del Ansible Automation P
 <br>
 <h3> Prerrequisitos </h3>
 
-<li>Maquinas Ansible Automation Platform desplegado sobre su plataforma de virtualizacion</li>
+<li>Contar con su maquinas Ansible Automation Platform desplegado sobre su plataforma de virtualizacion</li>
 <li>Contar con un usuario en el portal de <a href="https://developers.redhat.com/register">Developers</a></li>
-<li>Contar al menos con una maquina virtual adicional con sistema operativo Red Hat Enterprise Linux </li>
+<li>Contar al menos con una maquina virtual adicional con sistema operativo Red Hat Enterprise Linux 8 o 9</li>
 <li>Solicitar suscripcion de trial de Ansible Automation Platform
 <li>Contar con un usuario y repositiorio publico o privado en Github para almacenar los playbooks</li>
 <li>Suscribir Ansible Automation Platform con el trial <a href="https://XXXX/register">Ver Instrucciones</a></li>
@@ -56,47 +57,11 @@ Desplegar la maquina completa y realizar la instalacion del Ansible Automation P
 </details>
 
 
+## RETOS
+![Arquitectura](images/ansible_journey.png)
 
-## Retos
+[Reto 1 - Parchado de maquinas](RETO1.md)
 
-<details open>
-<summary>Reto 1</summary>
-<br>
-<h3>Parchado (actualización de versiones menores)</h3>
+[Reto 2 - Aplicar reglas de compliance](RETO2.md)
 
-
-El objetivo de este reto, es que a partir de <b>Ansible Automation Platform</b> se realize la actualizacion de una maquina virtual con Red Hat Enterprise Linux
-
-
-  <br><br>
-</details>
-
-<details open>
-<summary>Reto 2</summary>
-<br>
-Parchado (actualización de versiones menores)
-
-El objetivo de este reto, es que a partir d
-
-  <br><br>
-<pre>
-<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones</a>
-  
-</pre>
-</details>
-
-
-<details open>
-<summary>Reto 3</summary>
-<br>
-Parchado (actualización de versiones menores)
-
-El objetivo de este reto, es que a partir d
-
-  <br><br>
-<pre>
-<a href="https://developers.redhat.com/articles/2023/11/30/install-containerized-ansible-automation-platform-rhel-92#">Instrucciones</a>
-  
-</pre>
-</details>
-
+[Reto 3 - Instalar y configurar agentes en Windows](RETO3.md)
