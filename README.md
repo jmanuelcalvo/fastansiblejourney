@@ -16,6 +16,13 @@ La imagen lista con el AAP instalado y contenerizado se puede descargar en el si
 
 </pre>
 
+Los datos de conexion a la maquina son:
+```
+root/ABCde123.
+
+aap/ABCde123.
+```  
+
 
 </details>
 
