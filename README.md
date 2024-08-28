@@ -5,7 +5,7 @@
 ## Alistamiento de la arquitectura
 
 <details close>
-<summary>Despliegue Opción 1</summary>
+<summary>Opción 1. Despliegue de la máquina virtual AAP previamente construida </summary>
 <br>
 Descargar maquina virtual en formato qcow2 y convertirla para su virtualizador preferido
 
@@ -29,7 +29,7 @@ Ejemplo: Busque en google cómo convertir qcow2 a vmdk.
 </details>
 
 <details close>
-<summary>Despliegue Opción 2</summary>
+<summary>Opción 2. Desplegar e instalar la máquina virtual AAP desde cero</summary>
 <br>
 Desplegar la máquina completa y realizar la instalación del Ansible Automation Platform desde cero, para ellos se puede seguir esta guía de implementación de la solución contenerizada todo en uno:
 <br><br>
@@ -39,7 +39,7 @@ Desplegar la máquina completa y realizar la instalación del Ansible Automation
 </details>
 
 <details close>
-<summary>Alistamiento Ansible Automation Platform</summary>
+<summary>Alistamiento Ansible Automation Platform previamente desplegado</summary>
 <br>
 <h3> Prerrequisitos </h3>
 
@@ -57,12 +57,14 @@ Desplegar la máquina completa y realizar la instalación del Ansible Automation
 </details>
 
 
-## RETOS
+<h2>RETOS </h2>
 ![Arquitectura](images/ansible_journey.png)
 
-[Reto 1 - Parchado de máquinas](RETO1.md)
 
-[Reto 2 - Aplicar reglas de compliance](RETO2.md)
+<li>Reto 1 - Parchado de máquinas <a href="RETO1.md">Ver Instrucciones</a></li>
 
-[Reto 3 - Instalar y configurar agentes en Windows](RETO3.md)
+<li>Reto 2 - Aplicar reglas de compliance <a href="RETO2.md">Ver Instrucciones</a></li>
+
+
+<li>Reto 3 - Instalar y configurar agentes en Windows <a href="RETO2.md">Ver Instrucciones</a></li>
 
