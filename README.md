@@ -58,7 +58,7 @@ Desplegar la máquina completa y realizar la instalación del Ansible Automation
 
 
 <h2>RETOS </h2>
-<a href="default.asp"><img src="images/ansible_journey.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<a href="README.md"><img src="images/ansible_journey.png"></a>
 
 
 <li>Reto 1 - Parchado de máquinas <a href="RETO1.md">Ver Instrucciones</a></li>
