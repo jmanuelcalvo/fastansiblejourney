@@ -54,7 +54,7 @@ repo id                                                       repo name
 rhel-9-for-aarch64-appstream-rpms                             Red Hat Enterprise Linux 9 for ARM 64 - AppStream (RPMs)
 rhel-9-for-aarch64-baseos-rpms                                Red Hat Enterprise Linux 9 for ARM 64 - BaseOS (RPMs)
 ```
-# Nota: Es muy importante que la instalacion se realize con un usuario que NO sea root
+### Nota: Es muy importante que la instalacion se realize con un usuario que NO sea root
 
 ## Pasos de instalacion 
 Continuar con la documentacion oficial o siga estos pasos que son tomados de la documentacion:
@@ -87,9 +87,18 @@ Configuracion del archivo de inventario de Ansible Automation Platform
 [aap@localhost ~]$ cp inventory  inventory.default
 [aap@localhost ansible-automation-platform-containerized]$ sed -i 's/fqdn_of_your_rhel_host/localhost.localdomain/g' inventory
 [aap@localhost ansible-automation-platform-containerized]$ sed -i 's/<set your own>/redhat/g' inventory
+[aap@localhost ansible-automation-platform-containerized]$ vim inventory
+Descomentarear en la linea 30
+
+[database] 
+localhost.localdomain ansible_connection=local
+
 [aap@localhost ansible-automation-platform-containerized]$ export ANSIBLE_COLLECTIONS_PATH=/home/aap/ansible-automation-platform-containerized-setup-bundle-2.4-2-aarch64/collections/
 
+
+
 ```
+
 Editar el archivo invenrtory y sobre la linea 45 adicionar el bundle
 
 ```
@@ -103,3 +112,8 @@ Y posteriormente ejecutar el comando de instalacion
 ```
 [aap@localhost ansible-automation-platform-containerized]$ ansible-playbook -i inventory ansible.containerized_installer.install
 ```
+
+
+## Troubleshooting
+En caso que falle la implementacion por temas de timeout en postgres, recuerde descomentariar las linea de postgresql en el archivo de inventory
+https://access.redhat.com/solutions/7052692
