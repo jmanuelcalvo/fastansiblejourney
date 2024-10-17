@@ -54,7 +54,7 @@ repo id                                                       repo name
 rhel-9-for-aarch64-appstream-rpms                             Red Hat Enterprise Linux 9 for ARM 64 - AppStream (RPMs)
 rhel-9-for-aarch64-baseos-rpms                                Red Hat Enterprise Linux 9 for ARM 64 - BaseOS (RPMs)
 ```
-### Nota: Es muy importante que la instalacion se realize con un usuario que NO sea root
+### Nota: Es muy importante que la instalacion se realize con un usuario que NO sea root y tampoco que se pase de usuario con sudo, se debe generar un ingreso directo por la pantalla de login o por ssh directamente con el usuario
 
 ## Pasos de instalacion 
 Continuar con la documentacion oficial o siga estos pasos que son tomados de la documentacion:
