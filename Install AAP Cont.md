@@ -82,11 +82,24 @@ Installing:
 Configuracion del archivo de inventario de Ansible Automation Platform
 
 ```
-[aap@localhost ~]$ cd ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64
-[aap@localhost ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64]$ cp inventory inventory.default
-[aap@localhost ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64]$ sed -i 's/fqdn_of_your_rhel_host/localhost.localdomain/g' inventory
-[aap@localhost ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64]$ sed -i 's/<set your own>/redhat/g' inventory
-[aap@localhost ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64]$ export ANSIBLE_COLLECTIONS_PATH=/home/aap/ansible-automation-platform-containerized-setup-bundle-2.5-2-aarch64/collections/
+[aap@localhost ~]$ tar xvfzp ansible-automation-platform-containerized-setup-bundle-2.4-2-aarch64.tar.gz
+[aap@localhost ~]$ cd ansible-automation-platform-containerized-setup-bundle-2.4-2-aarch64
+[aap@localhost ~]$ cp inventory  inventory.default
+[aap@localhost ansible-automation-platform-containerized]$ sed -i 's/fqdn_of_your_rhel_host/localhost.localdomain/g' inventory
+[aap@localhost ansible-automation-platform-containerized]$ sed -i 's/<set your own>/redhat/g' inventory
+[aap@localhost ansible-automation-platform-containerized]$ export ANSIBLE_COLLECTIONS_PATH=/home/aap/ansible-automation-platform-containerized-setup-bundle-2.4-2-aarch64/collections/
+
+```
+Editar el archivo invenrtory y sobre la linea 45 adicionar el bundle
+
+```
+bundle_install=true
+# The bundle directory must include /bundle in the path
+bundle_dir=/home/aap/ansible-automation-platform-containerized-setup-bundle-2.4-2-aarch64/bundle/
 ```
 
+Y posteriormente ejecutar el comando de instalacion
 
+```
+[aap@localhost ansible-automation-platform-containerized]$ ansible-playbook -i inventory ansible.containerized_installer.install
+```
