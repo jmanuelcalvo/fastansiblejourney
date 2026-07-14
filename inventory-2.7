@@ -1,0 +1,103 @@
+# This is the AAP installer inventory file intended for the Container growth deployment topology.
+# This inventory file expects to be run from the host where AAP will be installed.
+# Please consult the Ansible Automation Platform product documentation about this topology's tested hardware configuration.
+# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.7/plan-ref_installation_deployment_models
+#
+# Please consult the docs if you're unsure what to add
+# For all optional variables please consult the included README.md
+# or the Ansible Automation Platform documentation:
+# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.7/install-con_aap_containerized_installation_intro
+
+# This section is for your AAP Gateway host(s)
+# -----------------------------------------------------
+[automationgateway]
+aap27.jmanuelcalvo.com
+
+# This section is for your AAP Controller host(s)
+# -----------------------------------------------------
+[automationcontroller]
+aap27.jmanuelcalvo.com
+
+# This section is for your AAP Automation Hub host(s)
+# -----------------------------------------------------
+[automationhub]
+aap27.jmanuelcalvo.com
+
+# This section is for your AAP EDA Controller host(s)
+# -----------------------------------------------------
+[automationeda]
+aap27.jmanuelcalvo.com
+
+# This section is for your AAP Automation Metrics Service host(s)
+# -----------------------------------------------------
+[automationmetrics]
+aap27.jmanuelcalvo.com
+
+# This section is for your AAP Lightspeed host(s)
+# -----------------------------------------------------
+# [ansiblelightspeed]
+# aap27.jmanuelcalvo.com
+
+# This section is for your Ansible MCP Server host(s)
+# -----------------------------------------------------
+[ansiblemcp]
+aap27.jmanuelcalvo.com
+
+# This section is for the AAP database
+# -----------------------------------------------------
+
+[database]
+aap27.jmanuelcalvo.com
+
+[all:vars]
+# Ansible
+ansible_connection=local
+
+# For a comprehensive list of all inventory file variables, see:
+# https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.7/install-assembly_appendix_inventory_file_vars
+
+# Common variables
+# -----------------------------------------------------
+postgresql_admin_username=postgres
+postgresql_admin_password=redhat123
+
+bundle_install=true
+# The bundle directory must include /bundle in the path
+bundle_dir='{{ lookup("ansible.builtin.env", "PWD") }}/bundle'
+
+
+
+redis_mode=standalone
+
+# AAP Gateway
+# -----------------------------------------------------
+gateway_admin_password=redhat123
+gateway_pg_host=aap27.jmanuelcalvo.com
+gateway_pg_password=redhat123
+
+# AAP Controller
+# -----------------------------------------------------
+controller_admin_password=redhat123
+controller_pg_host=aap27.jmanuelcalvo.com
+controller_pg_password=redhat123
+controller_percent_memory_capacity=0.5
+
+# AAP Automation Hub
+# -----------------------------------------------------
+hub_admin_password=redhat123
+hub_pg_host=aap27.jmanuelcalvo.com
+hub_pg_password=redhat123
+hub_seed_collections=false
+
+# AAP EDA Controller
+# -----------------------------------------------------
+eda_admin_password=redhat123
+eda_pg_host=aap27.jmanuelcalvo.com
+eda_pg_password=redhat123
+
+# AAP Automation Metrics Service
+# -----------------------------------------------------
+automationmetrics_pg_host=aap27.jmanuelcalvo.com
+automationmetrics_pg_password=redhat123
+automationmetrics_controller_read_pg_host=aap27.jmanuelcalvo.com
+automationmetrics_controller_read_pg_password=redhat123
